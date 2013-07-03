@@ -1,6 +1,6 @@
 {
     "name": "php-require-example",
-    "description": ".",
+    "description": "Example project using php-require and npm.",
     "version": "0.0.1",
     "author": {
         "name": "Richard S Allinson",
