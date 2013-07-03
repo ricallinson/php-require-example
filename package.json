@@ -1,0 +1,26 @@
+{
+    "name": "php-require-example",
+    "description": ".",
+    "version": "0.0.1",
+    "author": {
+        "name": "Richard S Allinson",
+        "email": "rsa@ricallinson.com"
+    },
+    "engines": {
+        "php": ">= 5.4.0"
+    },
+    "dependencies" : {
+        "php-require": "git://github.com/ricallinson/php-require.git#master",
+        "php-yaml": "git://github.com/ricallinson/php-yaml.git#master"
+    },
+    "devDependencies" : {
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:ricallinson/php-require-example.git"
+    },
+    "scripts": {
+        "test": "./test/run"
+    },
+    "license": "MIT"
+}
