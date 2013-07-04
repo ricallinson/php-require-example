@@ -1,27 +1,33 @@
 <?php
 
 /*
-	Require "php-require" from the "node_modules" folder.
+    Require "php-require" from the "node_modules" folder.
 */
 
 require("./node_modules/php-require/index.php");
 
 /*
-	Load "php-yaml" using "php-require".
+    Load dependences with "php-require".
 */
 
 $yaml = $require("php-yaml");
+$app = $require("php-slim");
 
 /*
-	Read the quotes file using "php-yaml".
+    Add a route to handle the request.
 */
 
-$quotes = $yaml->load("quotes.yaml");
+$app->get('/', function () use ($yaml) {
+
+    $quotes = $yaml->load("quotes.yaml");
+
+    foreach ($quotes as $quote) {
+        print("<p>" . $quote . "</>");
+    }
+});
 
 /*
-	Print the content of the quotes file.
+    Start the application.
 */
 
-foreach ($quotes as $quote) {
-	print("<p>" . $quote . "</>");
-}
+$app->run();

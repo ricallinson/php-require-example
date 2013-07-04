@@ -1,17 +1,18 @@
 {
     "name": "php-require-example",
-    "description": "Example project using php-require and npm.",
+    "description": "An example project using php-require.",
     "version": "0.0.1",
     "author": {
-        "name": "Richard S Allinson",
-        "email": "rsa@ricallinson.com"
+        "name": "Ric Allinson",
+        "email": "npm@ricallinson.com"
     },
     "engines": {
         "php": ">= 5.4.0"
     },
     "dependencies" : {
-        "php-require": "git://github.com/ricallinson/php-require.git#master",
-        "php-yaml": "git://github.com/ricallinson/php-yaml.git#master"
+        "php-require": "*",
+        "php-slim": "*",
+        "php-yaml": "*"
     },
     "devDependencies" : {
     },
